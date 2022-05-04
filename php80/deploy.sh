@@ -2,6 +2,8 @@
 
 echo "alias php='php8.0'" >> ~/.bash_aliases
 
+alias php='php8.0'
+
 cd /var/www/laravel
 
 git init
