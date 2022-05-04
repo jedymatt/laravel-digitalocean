@@ -9,10 +9,7 @@ su - larasail
 
 Run this script
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh)"
-```
-or
-```bash
+sudo apt-get update --fix-missing
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
 
@@ -40,5 +37,5 @@ Then, append this line and save
 ## Updating from github repository
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/update.sh)"
+curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/update.sh | bash
 ```
