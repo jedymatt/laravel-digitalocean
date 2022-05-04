@@ -12,8 +12,11 @@ Run this script
 ```
 
 ```bash
+cd /var/www/laravel
 
 larasail database init --user larasail --db umtc_election
+
+php artisan optimize
 
 php artisan migrate --seed --force
 
