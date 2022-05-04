@@ -20,3 +20,13 @@ php artisan optimize
 
 php artisan migrate --seed --force
 ```
+
+Configuring crons
+
+```bash
+crontab -e
+```
+Then, append this line and save
+```cron
+* * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1
+```
