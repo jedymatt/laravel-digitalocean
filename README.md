@@ -15,7 +15,7 @@ Run this script
 
 larasail database init --user larasail --db umtc_election
 
-php artisan migrate --seed
+php artisan migrate --seed --force
 
 php artisan optimize
 ```
