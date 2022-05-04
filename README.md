@@ -11,6 +11,10 @@ Run this script
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh)"
 ```
+or
+```bash
+curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
+```
 
 Setup database
 ```bash
