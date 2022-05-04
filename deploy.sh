@@ -4,9 +4,9 @@ cd /var/www/laravel
 
 git init
 
-git remote add origin https://github.com/jedymatt/umtc-election.git
-
 git config --global --add safe.directory /var/www/laravel
+
+git remote add origin https://github.com/jedymatt/umtc-election.git
 
 git fetch
 
