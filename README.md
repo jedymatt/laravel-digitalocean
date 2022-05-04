@@ -12,6 +12,7 @@ Run this script
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh)"
 ```
 
+Setup database
 ```bash
 cd /var/www/laravel
 
