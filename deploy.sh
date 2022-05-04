@@ -51,6 +51,3 @@ cp .env.production .env
 npm install && npm run prod
 
 php artisan key:generate --force
-
-echo 'Run `crontab -e` and append this line:'
-echo "* * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1"
