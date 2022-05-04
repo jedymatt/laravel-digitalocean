@@ -1,6 +1,7 @@
 # umtc-election-script
 
 Switch user
+
 ```bash
 su - larasail
 ```
@@ -8,15 +9,19 @@ su - larasail
 ## Deploy
 
 Before running the scipt, run this to fix missing packages
+
 ```bash
 sudo apt-get update --fix-missing
 ```
+
 Then
+
 ```bash
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
 
 Setup database
+
 ```bash
 cd /var/www/laravel
 
@@ -32,7 +37,9 @@ php artisan migrate --seed --force
 ```bash
 crontab -e
 ```
+
 Then, append this line and save
+
 ```cron
 * * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1
 ```
