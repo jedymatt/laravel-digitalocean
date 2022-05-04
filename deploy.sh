@@ -52,11 +52,5 @@ npm install && npm run prod
 
 php artisan key:generate --force
 
-larasail database init --user larasail --db umtc_election
-
-php artisan migrate --seed
-
-php artisan optimize
-
 echo 'Run `crontab -e` and append this line:'
 echo "* * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1"
