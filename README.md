@@ -27,7 +27,7 @@ php artisan optimize
 php artisan migrate --seed --force
 ```
 
-## Configuring crons
+## Register cron for laravel scheduler
 
 ```bash
 crontab -e
