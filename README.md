@@ -32,7 +32,7 @@ Then, append this line and save
 * * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1
 ```
 
-## Upating 
+## Updating 
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/update.sh)"
