@@ -5,8 +5,9 @@ Switch user
 su - larasail
 ```
 
-Run this script
+## Deploy
 
+Run this script
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh)"
 ```
@@ -21,7 +22,7 @@ php artisan optimize
 php artisan migrate --seed --force
 ```
 
-Configuring crons
+## Configuring crons
 
 ```bash
 crontab -e
@@ -29,4 +30,10 @@ crontab -e
 Then, append this line and save
 ```cron
 * * * * * cd /var/www/laravel && php artisan schedule:run >> /dev/null 2>&1
+```
+
+## Upating 
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/update.sh)"
 ```
