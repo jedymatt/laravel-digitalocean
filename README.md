@@ -19,6 +19,4 @@ larasail database init --user larasail --db umtc_election
 php artisan optimize
 
 php artisan migrate --seed --force
-
-php artisan optimize
 ```
