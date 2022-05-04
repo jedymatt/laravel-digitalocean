@@ -7,9 +7,12 @@ su - larasail
 
 ## Deploy
 
-Run this script
+Before running the scipt, run this to fix missing packages
 ```bash
 sudo apt-get update --fix-missing
+```
+Then
+```bash
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
 
