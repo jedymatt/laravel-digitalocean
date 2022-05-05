@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "alias php='php8.0'" >> ~/.bash_aliases
-
-alias php='php8.0'
+sudo apt remove php8.1-cli
 
 cd /var/www/laravel
 
