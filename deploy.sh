@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get update --fix-missing
+
 cd /var/www/laravel
 
 git init
