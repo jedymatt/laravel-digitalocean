@@ -17,11 +17,13 @@ sudo apt-get update --fix-missing
 Then
 
 php 8.0
+
 ```bash
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/php80/deploy.sh | bash
 ```
 
 php 8.1
+
 ```bash
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
@@ -36,6 +38,12 @@ larasail database init --user larasail --db umtc_election
 php artisan optimize
 
 php artisan migrate --seed --force
+```
+
+supervisor
+
+```bash
+curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/supervisor.sh | bash
 ```
 
 ## Register cron for laravel scheduler
