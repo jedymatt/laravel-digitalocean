@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt remove php8.1-cli
+sudo update-alternatives --set php /usr/bin/php8.0
 
 cd /var/www/laravel
 
