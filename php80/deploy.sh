@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get update --fix-missing
+
 sudo update-alternatives --set php /usr/bin/php8.0
 
 cd /var/www/laravel
