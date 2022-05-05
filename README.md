@@ -16,6 +16,12 @@ sudo apt-get update --fix-missing
 
 Then
 
+php 8.0
+```bash
+curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/php80/deploy.sh | bash
+```
+
+php 8.1
 ```bash
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
