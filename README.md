@@ -28,14 +28,18 @@ php 8.1
 curl -o- https://raw.githubusercontent.com/jedymatt/umtc-election-script/main/deploy.sh | bash
 ```
 
+optimize
+
+```bash
+php artisan optimize
+```
+
 Setup database
 
 ```bash
 cd /var/www/laravel
 
 larasail database init --user larasail --db umtc_election
-
-php artisan optimize
 
 php artisan migrate --seed --force
 ```
