@@ -42,6 +42,7 @@ sudo supervisorctl start laravel-worker:*
 
 # end of setup queue
 
+sudo rm composer.lock
 composer install --optimize-autoloader --no-dev
 
 cp .env.production .env
