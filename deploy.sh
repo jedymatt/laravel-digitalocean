@@ -15,8 +15,8 @@ git fetch
 git checkout main --force
 
 # Install important php dependencies
-
-sudo apt install php8.1-xml php8.1-gd php8.1-zip php8.1-mysql -y
+PHP="8.1"
+sudo apt-get install -y php$PHP-cli php$PHP-common php$PHP-mysql php$PHP-gd php$PHP-mysql php$PHP-curl php$PHP-mbstring php$PHP-xml php$PHP-zip php$PHP-fpm curl git
 
 # setup for laravel queue
 
